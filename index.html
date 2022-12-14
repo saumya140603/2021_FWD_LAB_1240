@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <form action="validate.html" >
+        <label for="">Name</label> <br>
+        <input type="text" name="form1" id="name" placeholder="Enter your name"> <br><br>
+        <label for="">Password</label> <br>
+        <input type="password" name="form1" id="password" placeholder="Password"> <br><br>
+        <label for="">E-mail id</label> <br>
+        <input type="email" name="form1" id="mail" placeholder="Ex: name@domain.com"> <br><br>
+        <label for="">Phone number</label> <br>
+        <input type="number" name="form1" id="number"> <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        let n = document.getElementById(name)
+        let p = document.getElementById(password)
+        let em = document.getElementById(mail)
+        let ph = document.getElementById(number)
+        let i = document.getElementsByName(form1)
+
+        function validation() {
+            if (n < 6 ) {
+                return False;
+                alert("Name should not be less thant 6 characters");
+            }
+            if(p < 6) {
+                return False;
+                alert("Password should not be less than 6 characters");
+            }
+            if(em = ""){
+                return False;
+                alert("Email id should not be empty");
+            }
+            if(ph != 10){
+                return False;
+                alert("Phone number should contain 10 digits only");
+            }
+            if(i = ""){
+                return False;
+                alert("Form should not be empty");
+            }
+        }
+    </script>
+</body>
+</html>
